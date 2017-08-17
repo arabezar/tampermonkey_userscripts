@@ -6,7 +6,7 @@ Language: **Русский|[English](/README.md)**
 Пользовательские скрипты делают путешествие по Интернету более комфортным. Будучи установленными, скрипты улучшают определенные сайты,
 меняя их внешний вид, добавляя новые функции или скрывая нежелательные вещи.
 
-### Как мне устанавливать пользовательские скрипты?
+### Как устанавливать пользовательские скрипты?
 
 Чтобы начать пользоваться скриптами, нужно установить в браузер специальное расширение.
 
@@ -21,11 +21,24 @@ Language: **Русский|[English](/README.md)**
 Удаляет рекламные баннеры на NNM Club и Rustorka, пропущенные блокировщиком рекламы. Разработан для Chromium-based браузеров
 (Google Chrome, Opera и т.д.).
 
-**Установить [сразу](https://github.com/hant0508/usescripts/raw/master/NNM%20Club%20and%20Rustorka%20ad%20remover.user.js) или посмотреть на [Greasy Fork](https://greasyfork.org/ru/scripts/21174-nnm-club-and-rustorka-ad-remover)**
+**Установить [сразу](https://github.com/hant05080/usescripts/raw/master/NNM%20Club%20and%20Rustorka%20ad%20remover.user.js) или посмотреть на [Greasy Fork](https://greasyfork.org/ru/scripts/21174-nnm-club-and-rustorka-ad-remover)**
 
 ### Etarg ad remover
 
 Удаляет рекламные баннеры от etarg и traforet на множестве сайтов, пропущенные блокировщиком рекламы. Разработан для Chromium-based
 браузеров (Google Chrome, Opera и т.д.).
 
-**Установить [сразу](https://github.com/hant0508/usescripts/raw/master/Etarg%20ad%20remover.user.js) или посмотреть на [Greasy Fork](https://greasyfork.org/ru/scripts/21178-etarg-ad-remover)**
+**Установить [сразу](https://github.com/hant05080/usescripts/raw/master/Etarg%20ad%20remover.user.js) или посмотреть на [Greasy Fork](https://greasyfork.org/ru/scripts/21178-etarg-ad-remover)**
+
+### Pikabu seconds
+
+Считает, сколько секунд прошло с момента публикации поста до каждого комментария. Работает в любом современном браузере. 
+
+**Установить [сразу](https://github.com/hant05080/usescripts/raw/master/Pikabu%20seconds.user.js) или посмотреть на [Greasy Fork](https://greasyfork.org/en/scripts/26766-pikabu-seconds)**
+
+
+### OMS disable timeout
+
+Отключает 30-секундную задержку и удаляет рекламные баннеры на ru.onlinemschool.com. Работает в любом современном браузере.
+
+**Установить [сразу](https://github.com/hant05080/usescripts/raw/master/OMS%20disable%20timeout.user.js) или посмотреть на [Greasy Fork](https://greasyfork.org/ru/scripts/26767-oms-disable-timeout)**

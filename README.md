@@ -7,7 +7,7 @@ Language: **[Русский](/README.rus.md)|English**
 User scripts put you in control of your browsing experience. Once installed, they automatically make the sites you visit better by
 adding features, making them easier to use, or taking out the annoying bits.
 
-### How do I install user scripts?
+### How to install user scripts?
 
 To use user scripts you need to first install a user script manager.
 
@@ -38,6 +38,6 @@ Counts seconds passed since the publication of a post to each comment. Works in 
 
 ### OMS disable timeout
 
-Disables 30 seconds timer on ru.onlinemschool.com. Works in any modern browser.
+Disables 30 seconds delay on ru.onlinemschool.com. Works in any modern browser.
 
 **Install [directly](https://github.com/hant05080/usescripts/raw/master/OMS%20disable%20timeout.user.js) or see on [Greasy Fork](https://greasyfork.org/ru/scripts/26767-oms-disable-timeout)**

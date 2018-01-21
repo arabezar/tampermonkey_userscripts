@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pikabu seconds
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Сколько секунд?
 // @author       hant0508
 // @match        http://pikabu.ru/story/*
@@ -32,7 +32,7 @@ function getTime() {
 }
 
 function setTime(postTime, newVersion) {
-    var comments = (newVersion ? document.getElementsByClassName('comment__datetime') : document.getElementsByClassName('b-comment__time'));
+    var comments = (newVersion ? document.getElementsByClassName('comments')[0].getElementsByClassName('comment__datetime') : document.getElementsByClassName('b-comment__time'));
     for (var i = 0; i < comments.length; ++i)
     {
         var time = comments[i].getAttribute('datetime');

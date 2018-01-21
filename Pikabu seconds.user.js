@@ -1,37 +1,54 @@
 // ==UserScript==
 // @name         Pikabu seconds
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.4
 // @description  Сколько секунд?
 // @author       hant0508
 // @match        http://pikabu.ru/story/*
+// @match        https://pikabu.ru/story/*
+// @match        https://new.pikabu.ru/story/*
 // @grant        none
 // @run-at       document-start
 // ==/UserScript==
 
 function getTime() {
-    var post = document.getElementsByClassName('story__date')[0];
+    var post = document.getElementsByClassName('story__main')[0];
     if (post === undefined)
     {
         window.setTimeout(getTime, 1);
         return;
     }
-    console.log(post.title);
-    window.addEventListener('load', setTime(post.title), false);
+
+    var newVersion = (document.getElementsByTagName('html')[0].getAttribute('lang') == 'ru');
+    console.log(newVersion);
+    var time;
+    if (newVersion)
+        time = Date.parse(post.getElementsByClassName('story__datetime')[0].getAttribute('datetime'))/1000;
+    else
+        time = post.getElementsByClassName('story__date')[0].title;
+
+    console.log(time);
+    window.addEventListener('load', setTime(time, newVersion), false);
 }
 
-function setTime(postTime) {
-    var comments = document.getElementsByClassName('b-comment__time');
+function setTime(postTime, newVersion) {
+    var comments = (newVersion ? document.getElementsByClassName('comment__datetime') : document.getElementsByClassName('b-comment__time'));
     for (var i = 0; i < comments.length; ++i)
     {
-        var time = comments[i].getAttribute('datetime') - postTime;
+        var time = comments[i].getAttribute('datetime');
+        if (newVersion)
+            time = Date.parse(time)/1000;
+        time -= postTime;
+
         var sec = ' секунд';
+        var elm = document.createElement('span');
 
         if (time % 100 < 10 || time % 100 > 20) {
             if (time % 10 == 1) sec += "a";
             else if (time % 10 < 5 && time % 10) sec += "ы";
         }
-        comments[i].innerHTML += ' (' + time + sec + ')';
+        elm.innerHTML = '&nbsp;(' + time + sec + ')';
+        comments[i].parentNode.insertBefore(elm, comments[i].nextSibling);
     }
 }
 

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Avito Cleaner
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Unchecks commercial services and hides some intrusive ads
 // @author       hant0508
 // @include      https://www.avito.ru/*
@@ -26,7 +26,7 @@ function hideArr (arr) {
 }
 
 (function() {
-	var elm = document.getElementById('pack3');
+	var elm = document.getElementsByClassName('packages-tab_free')[0];
 	if (elm !== null && elm !== undefined) {
 		elm.closest('.packages-tab').click();
 	}

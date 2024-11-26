@@ -39,17 +39,17 @@ function hideArr (arr) {
 	hideArr(document.getElementsByClassName('profile-item-promo'));
 	hideArr(document.getElementsByClassName('profile-item-warning'));
 
-	elm = document.getElementsByClassName('js-packages')[0];
-	if (elm.children[1].innerHTML.includes('Примените к объявлению пакет услуг')) {
-		hide(elm);
-	}
-
-	// Removing the top banner
+	// Removing top banner
 	var elms = document.querySelectorAll('*[class^="index-module-left-block-"]');
 	if (elms.length > 0) {
 		setTimeout(() => {
 		    elm = elms[0].nextElementSibling.firstElementChild;
 		    if (elm !== null && elm !== undefined && elm.querySelectorAll('*[name="close"]').length > 0) { hide(elm); }
 		}, 2000);
+	}
+
+	elm = document.getElementsByClassName('js-packages')[0];
+	if (elm.children[1].innerHTML.includes('Примените к объявлению пакет услуг')) {
+		hide(elm);
 	}
 })();

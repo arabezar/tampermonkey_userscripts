@@ -1,6 +1,6 @@
 Language: **[Русский](/README.rus.md)|English**
 
-# Usescripts
+# Userscripts
 
 ### What are user scripts?
 
@@ -16,6 +16,12 @@ To use user scripts you need to first install a user script manager.
 * Opera (version 15 and later): [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or [Violentmonkey](https://addons.opera.com/en/extensions/details/violent-monkey/)
 
 ## List of scripts
+
+### Avito Cleaner
+
+Removes ad banners missed by ad blocker. Works in any modern browser.
+
+**Install [directly](https://github.com/arabezar/tampermonkey_userscripts/raw/refs/heads/master/Avito%20Cleaner.user.js)**
 
 ### NNM Club and Rustorka ad remover
 

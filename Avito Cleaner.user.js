@@ -43,8 +43,10 @@ function hideArr (arr) {
 	var elms = document.querySelectorAll('*[class^="index-module-left-block-"]');
 	if (elms.length > 0) {
 		setTimeout(() => {
-		    elm = elms[0].nextElementSibling.firstElementChild;
-		    if (elm !== null && elm !== undefined && elm.querySelectorAll('*[name="close"]').length > 0) { hide(elm); }
+			elm = elms[0].nextElementSibling.firstElementChild;
+			if (elm !== null && elm !== undefined &&
+			    (elm.querySelectorAll('*[name="close"]').length > 0 ||
+			     elm.querySelectorAll('*[class^="personal-discount-"]').length > 0)) { hide(elm); }
 		}, 2000);
 	}
 

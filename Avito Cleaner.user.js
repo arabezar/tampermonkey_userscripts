@@ -45,7 +45,7 @@ function hideArr (arr) {
 		setTimeout(() => {
 			elm = elms[0].nextElementSibling.firstElementChild;
 			if (elm !== null && elm !== undefined &&
-			    elm.querySelectorAll('*[name="close"], *[class^="personal-discount-"], *[class*="Close-module-mask-"], *[class*="styles-module-closeIcon-"]').length > 0) { hide(elm); }
+			    elm.querySelectorAll('*[name="close"], *[class^="personal-discount-"], *[class*="Close-module-mask-"], *[class*="styles-module-closeIcon-"], *[class*="styles-module-icon-"]').length > 0) { hide(elm); }
 		}, 2000);
 	}
 

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Avito Cleaner
 // @namespace    http://tampermonkey.net/
-// @version      0.2.3
+// @version      0.2.4
 // @description  Unchecks commercial services and hides some intrusive ads
 // @author       hant0508
 // @include      https://www.avito.ru/*

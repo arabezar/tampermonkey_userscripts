@@ -47,3 +47,9 @@ Counts seconds passed since the publication of a post to each comment. Works in 
 Disables 30 seconds delay on ru.onlinemschool.com. Works in any modern browser.
 
 **Install [directly](https://github.com/arabezar/tampermonkey_userscripts/raw/master/OMS%20disable%20timeout.user.js) or see on [Greasy Fork](https://greasyfork.org/ru/scripts/26767-oms-disable-timeout)**
+
+### Yandex.Mail Cleaner
+
+Removes right blank column with swithing-off-ad button and blank space over the mail actions' buttons missed by ad blocker. Works in any modern browser.
+
+**Install [directly](https://github.com/arabezar/tampermonkey_userscripts/raw/master/Yandex.Mail%20Cleaner.user.js)**

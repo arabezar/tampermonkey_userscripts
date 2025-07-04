@@ -48,3 +48,9 @@ Language: **Русский|[English](/README.md)**
 Отключает 30-секундную задержку и удаляет рекламные баннеры на ru.onlinemschool.com. Работает в любом современном браузере.
 
 **Установить [сразу](https://github.com/arabezar/tampermonkey_userscripts/raw/master/OMS%20disable%20timeout.user.js) или посмотреть на [Greasy Fork](https://greasyfork.org/ru/scripts/26767-oms-disable-timeout)**
+
+### Yandex.Mail 
+
+Удаляет пустую правую колонку с кнопкой "Отключить рекламу", а также пустое пространство над кнопками действий с письмами, пропущенные блокировщиком рекламы. Работает в любом современном браузере. 
+
+**Установить [сразу](https://github.com/arabezar/tampermonkey_userscripts/raw/master/Yandex.Mail%20Cleaner.user.js)**

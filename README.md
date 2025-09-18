@@ -50,6 +50,6 @@ Disables 30 seconds delay on ru.onlinemschool.com. Works in any modern browser.
 
 ### Yandex.Mail Cleaner
 
-Removes right blank column with swithing-off-ad button and blank space over the mail actions' buttons missed by ad blocker. Works in any modern browser.
+Removes right blank column with swithing-off-ad button and blank space over the mail actions' buttons missed by ad blocker in Opera. Works in any modern browser but actual for Opera only.
 
 **Install [directly](https://github.com/arabezar/tampermonkey_userscripts/raw/master/Yandex.Mail%20Cleaner.user.js)**

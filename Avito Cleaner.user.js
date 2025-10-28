@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Avito Cleaner
 // @namespace    http://tampermonkey.net/
-// @version      0.2.5
+// @version      0.2.6
 // @description  Unchecks commercial services and hides some intrusive ads
 // @author       hant0508
 // @include      https://www.avito.ru/*
@@ -32,6 +32,7 @@ function hideArr (arr) {
 		setTimeout(() => {
 			// Removing top banner
 			hideArr(document.getElementsByClassName('cERYi'));
+            hideArr(document.getElementsByClassName('index.module__banner-block___ZGFkNT'));
 			
 			// Remove cards under «Мои объявления»
 			elm = elm.nextElementSibling;

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex.Mail Cleaner
 // @namespace    http://tampermonkey.net/
-// @version      0.0.1
+// @version      0.0.2
 // @description  Removes commercial services and some intrusive ads
 // @author       arabezar
 // @include      https://mail.yandex.ru/*
@@ -16,15 +16,11 @@ function remove (elm) {
 }
 
 (function() {
-    // Removing column with 'Switch off ads' button
-    var elms = document.querySelectorAll('*[class^="RightColumnRoot"]');
-    remove(elms[0]);
-
-    // Removing empty line above the mail actions' buttons
     var elm = document.getElementById('js-mail-layout-content-header');
 	if (elm !== null && elm !== undefined) {
 		setTimeout(() => {
-            remove(elm.querySelectorAll('*[class^="DirectLine"]')[0]);
-		}, 1000);
+			remove(elm.getElementsByClassName("DirectLine")[0]); // Removing empty line above the mail actions' buttons
+			remove(document.getElementsByClassName("RightColumnRoot")[0]); // Removing column with 'Switch off ads' button
+		}, 2000);
 	}
 })();

@@ -19,5 +19,5 @@ function remove (elm) {
 	setTimeout(() => {
 		remove(document.getElementsByClassName("RightColumnRoot")[0]); // Removing column with 'Switch off ads' button
 		remove(document.getElementsByClassName("DirectLine")[0]); // Removing empty line above the mail actions' buttons
-	}, 2000);
+	}, 4000);
 })();

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Avito Item Archive Cleaner
 // @namespace    http://tampermonkey.net/
-// @version      2025-09-27
+// @version      2026-03-13
 // @description  Removes garbage from the page
 // @author       arabezar
 // @match        https://www.avito.ru/*
@@ -24,8 +24,11 @@ function hideArr (arr) {
     }
 }
 
-function remove (elm) {
+function remove (elm, levelsUp = 0) {
     if (elm !== null && elm !== undefined) {
+        for (var i = 0; i < levelsUp && elm.parentElement !== null && elm.parentElement !== undefined; +i) {
+            elm = elm.parentElement;
+        }
     	elm.remove();
     }
 }
@@ -50,4 +53,5 @@ function removeArr(arr) {
 
     remove(document.querySelector('div[class^="styles-similars-"]'));
     remove(document.querySelector('div[class*="styles-module-root-"]'));
+    remove(document.querySelector('div[data-beduin-version]', 2));          // new ads
 })();

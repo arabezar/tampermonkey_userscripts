@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex.Mail Cleaner
 // @namespace    http://tampermonkey.net/
-// @version      0.0.3
+// @version      0.0.4
 // @description  Removes commercial services and some intrusive ads
 // @author       arabezar
 // @include      https://mail.yandex.ru/*

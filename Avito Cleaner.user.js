@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Avito Cleaner
 // @namespace    http://tampermonkey.net/
-// @version      0.2.8
+// @version      0.2.9
 // @description  Unchecks commercial services and hides some intrusive ads
 // @author       hant0508
 // @include      https://www.avito.ru/*
@@ -53,7 +53,8 @@ function remove (elm, levelsUp = 0) {
 			if (elm !== null && elm !== undefined && elm.className.includes('Cards-module-wrapper-')) { hide(elm); }
 			
 			// Remove ads above «Мои объявления»
-			remove(document.querySelector('div[data-beduin-version]', 2));
-		}, 2000);
+			//remove(document.querySelector('div[data-beduin-version]', 2));
+			remove(document.querySelector('div[data-element="beduin-v2/sx-banner"]', 2));
+		}, 3000);
 	}
 })();
